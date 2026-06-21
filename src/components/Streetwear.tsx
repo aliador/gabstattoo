@@ -76,7 +76,6 @@ export default function Streetwear() {
           </div>
 
           <div className="streetwear-manifesto-block font-mono">
-            <h3>VESTIR A PELE.</h3>
             <h3>MARCAR O PANO.</h3>
             <h3>EXP_009_COLLAB</h3>
             <div className="manifesto-paragraph-box">
@@ -103,7 +102,7 @@ export default function Streetwear() {
                 exit={{ opacity: 0, y: 15 }}
               >
                 <span className="alert-red-header">⚠ SISTEMA // ACESSO ADIADO:</span>
-                <p className="text-white">Lote esgotado em 3 minutos. Aguarde o ciclo de relançamento PROTOCOLO_KNIGHT_SKULL_V.02_REGISTRAR na lista de contatos para acesso antecipado.</p>
+                <p className="text-white">Lote esgotado em 3 minutos. Aguarde o ciclo de relançamento PROTOCOLO_CYBER_V.02_REGISTRAR na lista de contatos para acesso antecipado.</p>
               </motion.div>
             )}
           </div>

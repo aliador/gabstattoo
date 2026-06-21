@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import './ArchiveGallery.css';
+import './ArchiveGallery.css'; // Reusing the same CSS
 
 // Import portfolio images
-import desenho2_5 from '../assets/images/desenho2.5.png';
-import desenho3_5 from '../assets/images/desenho3.5.png';
-import imagem6 from '../assets/images/imagem6.png';
+import desenho1 from '../assets/images/desenho1.png';
+import desenho2 from '../assets/images/desenho2.png';
+import desenho3 from '../assets/images/desenho3.jpg';
+import desenho4 from '../assets/images/desenho4.jpg';
 
 const CAROUSEL_IMAGES = [
-  { id: '1', src: desenho2_5, title: 'DESENHO_2.5' },
-  { id: '2', src: desenho3_5, title: 'DESENHO_3.5' },
-  { id: '3', src: imagem6, title: 'IMAGEM_06' }
+  { id: '1', src: desenho1, title: 'DESENHO_01' },
+  { id: '2', src: desenho2, title: 'DESENHO_02' },
+  { id: '3', src: desenho3, title: 'DESENHO_03' },
+  { id: '4', src: desenho4, title: 'DESENHO_04' }
 ];
 
-export default function ArchiveGallery() {
+export default function SkinWorkGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -48,15 +50,15 @@ export default function ArchiveGallery() {
   };
 
   return (
-    <section className={`carousel-section ${isFullscreen ? 'carousel-fs-mode' : ''}`} id="archive-gallery">
+    <section className={`carousel-section ${isFullscreen ? 'carousel-fs-mode' : ''}`} id="skinwork-gallery">
       {isFullscreen && <div className="fs-backdrop" onClick={toggleFullscreen}></div>}
       
       <div className="carousel-container brutalist-border">
         {/* Header HUD inside the carousel space so it stays pinned */}
         <div className="carousel-header">
           <div className="ch-left">
-            <h2 className="font-display ch-title">ARCHIVE_VIEWER</h2>
-            <p className="font-mono ch-subtitle">Digital archive of tattoos and original artwork.</p>
+            <h2 className="font-display ch-title">SKIN_WORK!!</h2>
+            <p className="font-mono ch-subtitle" style={{ color: 'rgba(255, 255, 255, 0.6)'}}>Digital archive of tattoos on skin.</p>
           </div>
           <div className="ch-right font-mono text-red">
             <span className="counter-dot pulsating"></span>
@@ -104,7 +106,7 @@ export default function ArchiveGallery() {
 
         <div className="carousel-controls">
           <div className="empty-spacer"></div>
-          <button className="c-fs-btn font-mono" onClick={toggleFullscreen}>
+          <button className="c-fs-btn font-mono" onClick={toggleFullscreen} style={{ color: 'rgba(255, 255, 255, 0.6)'}}>
             {isFullscreen ? '[EXIT_FULL]' : '[ENTER_FULLSCREEN]'}
           </button>
         </div>

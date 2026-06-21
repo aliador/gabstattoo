@@ -149,6 +149,14 @@ export default function Tribal() {
           </div>
         </div>
       </div>
+
+      {/* Cyber Tribal linear ticker at the bottom */}
+      <div className="ticker-wrap ticker-wrap-red hard-edges rotate-ticker">
+        <div className="ticker-content">
+          <span>CYBER_TRIBAL - BLACKWORK - DARKNESS _ CYBER_TRIBAL - BLACKWORK - DARKNESS _ CYBER_TRIBAL - BLACKWORK - DARKNESS _ CYBER_TRIBAL - BLACKWORK - DARKNESS _ </span>
+          <span>CYBER_TRIBAL - BLACKWORK - DARKNESS _ CYBER_TRIBAL - BLACKWORK - DARKNESS _ CYBER_TRIBAL - BLACKWORK - DARKNESS _ CYBER_TRIBAL - BLACKWORK - DARKNESS _ </span>
+        </div>
+      </div>
     </section>
   );
 }

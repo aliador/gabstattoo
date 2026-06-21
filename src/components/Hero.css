@@ -63,8 +63,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: grayscale(1) contrast(1.7) brightness(0.85);
-  mix-blend-mode: screen;
+  filter: contrast(1.2) brightness(0.9);
 }
 
 .hero-vignette {

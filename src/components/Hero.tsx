@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import './Hero.css';
 
-// Using the generated high-quality Knight Skull artwork path
-import knightSkullImage from '../assets/images/knight_skull_stencil_1781658211478.jpg';
+// Using the designated high-quality principal artwork path
+import principalImage from '../assets/images/principal.jpg';
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
 
       {/* Rotating vertical sidebar text */}
       <div className="vertical-label-container">
-        <span className="vertical-label">[PROTOCOLO_KNIGHT_SKULL_V.01]</span>
+        <span className="vertical-label">[PROTOCOLO_CYBER_V.01]</span>
         <span className="vertical-label-right">[SP_BR_2026]</span>
       </div>
 
@@ -22,7 +22,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 1.15, rotate: -2 }}
           animate={{ opacity: 0.6, scale: 1, rotate: 0 }}
           transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
-          style={{ backgroundImage: `url(${knightSkullImage})` }}
+          style={{ backgroundImage: `url(${principalImage})` }}
         />
         <div className="hero-vignette"></div>
       </div>

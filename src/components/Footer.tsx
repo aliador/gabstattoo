@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Instagram } from 'lucide-react';
 import './Footer.css';
 
 // Importing our high contrast Knight Skull central image
@@ -11,6 +12,14 @@ export default function Footer() {
   // Form states
   const [clientName, setClientName] = useState('');
   const [clientIdea, setClientIdea] = useState('');
+
+  React.useEffect(() => {
+    const openFormHandler = () => {
+      setIsInverted(true);
+    };
+    window.addEventListener('open-booking-form', openFormHandler);
+    return () => window.removeEventListener('open-booking-form', openFormHandler);
+  }, []);
 
   const handleBookingSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,7 +56,9 @@ export default function Footer() {
             {/* Left social pillar */}
             <div className="vertical-social-left font-mono">
               <span className="social-tag font-display">SOCIAL_PORTAL</span>
-              <a href="https://instagram.com/gab_.tatto" target="_blank" rel="noreferrer" className="social-link">[INSTAGRAM] @GAB_.TATTO</a>
+              <a href="https://instagram.com/gab_.tatto" target="_blank" rel="noreferrer" className="social-link" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Instagram size={18} /> @GAB_.TATTO
+              </a>
             </div>
 
             {/* Central massive Skull and click button */}
@@ -74,8 +85,6 @@ export default function Footer() {
             {/* Right booking links pillar */}
             <div className="vertical-social-right font-mono">
               <span className="social-tag font-display">DIRECT_LOGS</span>
-              <span className="social-link text-red-accent">[ESTÚDIO] SÃO PAULO, PINHEIROS</span>
-              <span className="social-link">[ATENDIMENTO] TER_SAB : 11h_20h</span>
             </div>
           </motion.div>
         ) : (

@@ -3,9 +3,10 @@ import SmoothScroll from './components/SmoothScroll';
 import Hero from './components/Hero';
 import Blackwork from './components/Blackwork';
 import Tribal from './components/Tribal';
-import Streetwear from './components/Streetwear';
 import ArchiveGallery from './components/ArchiveGallery';
+import SkinWorkGallery from './components/SkinWorkGallery';
 import Footer from './components/Footer';
+import WhatsAppFloatingButton from './components/WhatsAppFloatingButton';
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
       {/* Top persistent tactical navbar */}
       <header style={headerContainerStyle}>
         <div style={logoGroupStyle}>
-          <span style={logoBadgeStyle}>☠ PROTOCOLO_KNIGHT_SKULL</span>
+          <span style={logoBadgeStyle}>☠ PROTOCOLO_CYBER</span>
         </div>
         
         {/* Navigation Coordinates */}
@@ -23,8 +24,8 @@ export default function App() {
           <a href="#hero" style={linkStyle}>[00_IMPACTO]</a>
           <a href="#blackwork" style={linkStyle}>[01_CARNE]</a>
           <a href="#tribal" style={linkStyle}>[02_OSSO]</a>
-          <a href="#streetwear" style={linkStyle}>[03_PANO]</a>
-          <a href="#archive-gallery" style={linkStyle}>[04_ARQUIVO]</a>
+          <a href="#archive-gallery" style={linkStyle}>[03_ARQUIVO]</a>
+          <a href="#skinwork-gallery" style={linkStyle}>[04_SKIN_WORK]</a>
           <a href="#agendamento" style={btnBookingNavStyle}>[05_REQUERER]</a>
         </nav>
 
@@ -47,16 +48,36 @@ export default function App() {
           {/* Cyber Tribal Section */}
           <Tribal />
 
-          {/* Streetwear Section */}
-          <Streetwear />
-
           {/* Archive / Portfolio Section */}
           <ArchiveGallery />
+
+          {/* Animated Tickers Between Galleries */}
+          <section style={{ position: 'relative', height: '120px', display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: 'var(--black)', padding: '40px 0', overflow: 'hidden', borderTop: '2px solid var(--gray)', borderBottom: '2px solid var(--gray)' }}>
+            <div className="ticker-wrap hard-edges" style={{ position: 'absolute', top: '20px', left: '-5%', width: '110%', transform: 'rotate(-2deg)', zIndex: 9 }}>
+              <div className="ticker-content" style={{ animationDirection: 'reverse' }}>
+                <span>GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ </span>
+                <span>GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ </span>
+              </div>
+            </div>
+
+            <div className="ticker-wrap ticker-wrap-red hard-edges" style={{ position: 'absolute', bottom: '20px', left: '-5%', width: '110%', transform: 'rotate(2deg)', zIndex: 10, boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.5)' }}>
+              <div className="ticker-content">
+                <span>O PRETO É A COR MAIS QUENTE _ O PRETO É A COR MAIS QUENTE _ O PRETO É A COR MAIS QUENTE _ O PRETO É A COR MAIS QUENTE _ O PRETO É A COR MAIS QUENTE _ </span>
+                <span>O PRETO É A COR MAIS QUENTE _ O PRETO É A COR MAIS QUENTE _ O PRETO É A COR MAIS QUENTE _ O PRETO É A COR MAIS QUENTE _ O PRETO É A COR MAIS QUENTE _ </span>
+              </div>
+            </div>
+          </section>
+
+          {/* Skin Work Gallery */}
+          <SkinWorkGallery />
 
           {/* Booking / Closing Footer */}
           <Footer />
         </main>
       </SmoothScroll>
+
+      {/* Floating WhatsApp Button */}
+      <WhatsAppFloatingButton />
     </div>
   );
 }

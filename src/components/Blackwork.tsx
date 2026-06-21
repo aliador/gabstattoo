@@ -4,7 +4,7 @@ import './Blackwork.css';
 // Importing generated assets
 import tattooFlashesImage from '../assets/images/tattoo_flashes_1781658248928.jpg';
 import cyberTribalTattooImage from '../assets/images/cyber_tribal_tattoo_1781658223465.jpg';
-import desenho1 from '../assets/images/desenho1.png';
+import desenho4_5 from '../assets/images/desenho4.5.png';
 
 import { TattooProject } from '../types';
 
@@ -21,12 +21,12 @@ const PROJECTS: TattooProject[] = [
   },
   {
     id: 'b2',
-    title: 'SKULL!!!',
+    title: 'pressione_a_foto!',
     style: 'Cyber Tribal',
-    image: desenho1,
+    image: desenho4_5,
     size: '',
     placement: '',
-    description: '[Skull_Shading]',
+    description: '[ORIGINAL_WALL_CONCEPT]',
     year: '2026'
   }
 ];
@@ -65,24 +65,6 @@ export default function Blackwork() {
               <span className="text-gray-500">SPEED: 9.8V</span>
             </div>
           </div>
-
-          <motion.div 
-            className="tattoo-frame-small brutalist-border"
-            whileHover={{ scale: 1.03, rotate: -2 }}
-            transition={{ type: 'spring', stiffness: 200 }}
-          >
-            <div className="frame-header-tag">[FLASH_ZINE_SHEET_01]</div>
-            <img 
-              src={PROJECTS[0].image} 
-              alt={PROJECTS[0].title}
-              referrerPolicy="no-referrer"
-              className="tattoo-image color-preserved-flash"
-            />
-            <div className="frame-footer">
-              <span className="font-display text-sm">{PROJECTS[0].title}</span>
-              <span className="year">{PROJECTS[0].year}</span>
-            </div>
-          </motion.div>
         </div>
 
         {/* Center/Right column: Overlapping massive tilted tattoo image */}
@@ -95,7 +77,7 @@ export default function Blackwork() {
             whileHover={{ scale: 1.01, rotate: 0 }}
             transition={{ type: 'spring', stiffness: 100 }}
           >
-            <div className="frame-header-tag text-bg-red">[Skull_Shading]</div>
+            <div className="frame-header-tag text-bg-red">[ORIGINAL_WALL_CONCEPT]</div>
             <img 
               src={PROJECTS[1].image} 
               alt={PROJECTS[1].title}
