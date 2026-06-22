@@ -145,7 +145,7 @@ export default function Tribal() {
 
           <div className="warning-stamps">
             <span className="danger-tag font-mono">⚠ PERIGO: PRETO FRESCO</span>
-            <span className="sticker-style-wire font-mono">[COD_KNIGHT_SKULL]</span>
+            <span className="sticker-style-wire font-mono">[COD_CYBER]</span>
           </div>
         </div>
       </div>
