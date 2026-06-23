@@ -71,6 +71,11 @@ export default function App() {
           {/* Skin Work Gallery */}
           <SkinWorkGallery />
 
+          {/* CYBER transition band before the Instagram/footer section */}
+          <section className="gallery-transition-band" aria-hidden="true">
+            <div className="huge-bg-text font-display">CYBER</div>
+          </section>
+
           {/* Booking / Closing Footer */}
           <Footer />
         </main>

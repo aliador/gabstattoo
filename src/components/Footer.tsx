@@ -38,12 +38,6 @@ export default function Footer() {
     >
       <div className="bg-grid-lines"></div>
 
-      {/* Behind background watermarks */}
-      <div className="closing-background-words font-display">
-        <span>NÃO GOSTOU? _</span>
-        <span>O PROBLEMA É SEU. _</span>
-      </div>
-
       <AnimatePresence mode="wait">
         {!isInverted ? (
           // Standard view
@@ -56,7 +50,7 @@ export default function Footer() {
           >
             {/* Left social pillar */}
             <div className="vertical-social-left font-mono">
-              <span className="social-tag font-display">SOCIAL_PORTAL</span>
+              <span className="social-tag font-display">!!ERROR_404!!</span>
               <a href="https://instagram.com/gab_.tatto" target="_blank" rel="noreferrer" className="social-link" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Instagram size={18} /> @GAB_.TATTO
               </a>

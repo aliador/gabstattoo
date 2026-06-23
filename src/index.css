@@ -199,6 +199,23 @@ body::before {
   pointer-events: none;
 }
 
+.gallery-transition-band {
+  position: relative;
+  height: 220px;
+  background-color: var(--black);
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  overflow: hidden;
+}
+
+.gallery-transition-band .huge-bg-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(7rem, 18vw, 13rem);
+  opacity: 0.16;
+}
+
 /* Sticker Drop Styling */
 .sticker-drop {
   position: absolute;

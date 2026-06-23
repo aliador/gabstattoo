@@ -140,7 +140,7 @@ export default function Tribal() {
           </div>
 
           <p className="tribal-description font-mono">
-            O Cyber Tribal não é ornamento; é uma couraça. Desenhado de forma assimétrica para se fundir de forma definitiva com as linhas do tendão e da clavícula, criando contraste radical com o tom da pele.
+            O Cyber Tribal não é ornamento; é uma couraça. Desenhado de forma assimétrica para se fundir de forma definitiva com as linhas, criando contraste radical com o tom da pele.
           </p>
 
           <div className="warning-stamps">

@@ -61,7 +61,7 @@ export default function Hero() {
           <p className="barcode-text">GABS TATTOO // BLACKWORK & TRIBAL</p>
         </div>
         <div className="scroll-indicator font-display">
-          <span>DESCI PARA A PELE // SCROLL </span>
+          <span>SUA_PELE_MERECE_ESCURIDÃO_AUTÊNTICA</span>
           <span className="blink-arrow">↓</span>
         </div>
       </div>
