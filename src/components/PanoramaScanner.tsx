@@ -24,7 +24,7 @@ export default function PanoramaScanner({ onBooking }: PanoramaScannerProps) {
         onClick={onBooking}
         className="big-booking-trigger font-display hard-edges panorama-booking-button"
       >
-        [ MARCAR MINHA PELE ]
+        [ _DESORÇAMENTO_ ]
       </button>
     </div>
   );

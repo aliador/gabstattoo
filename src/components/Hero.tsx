@@ -51,7 +51,7 @@ export default function Hero() {
         animate={{ y: 0, rotate: 12, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5, type: 'spring' }}
       >
-        <span className="danger-tag font-display">PROJETOS AUTORAIS APENAS</span>
+        <span className="danger-tag font-display">O BRABO</span>
       </motion.div>
 
       {/* Bottom status barcode and details */}
