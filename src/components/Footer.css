@@ -3,7 +3,7 @@
   width: 100%;
   position: relative;
   background-color: var(--black);
-  padding: 100px 5%;
+  padding: 40px 5% 80px;
   overflow: hidden;
   transition: background-color 0.4s steps(6), color 0.4s steps(6);
   display: flex;
