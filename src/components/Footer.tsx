@@ -40,7 +40,7 @@ export default function Footer() {
 
       {/* Background watermark above the Instagram block */}
       <div className="closing-background-words font-display" aria-hidden="true">
-        <span>CICATRIZES_DIGITAIS</span>
+        <span>PRETO_PURO</span>
       </div>
 
       <AnimatePresence mode="wait">
@@ -55,7 +55,7 @@ export default function Footer() {
           >
             {/* Left social pillar */}
             <div className="vertical-social-left font-mono">
-              <span className="social-tag font-display">!!ERROR_404!!</span>
+              <span className="social-tag font-display"></span>
               <a href="https://instagram.com/gab_.tatto" target="_blank" rel="noreferrer" className="social-link" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Instagram size={18} /> @GAB_.TATTO
               </a>
@@ -95,7 +95,7 @@ export default function Footer() {
               
               <div className="booking-simple-form brutalist-border">
                 <form onSubmit={handleBookingSubmit} className="booking-raw-form font-mono">
-                  <h3 className="form-sub-title font-display">_DESORÇAMENTO_</h3>
+                  <h3 className="form-sub-title font-display">PRETO_PURO</h3>
                   <p className="form-desc text-xs">Descreva sua ideia e entre em contato diretamente.</p>
                   
                   <div className="form-group">
