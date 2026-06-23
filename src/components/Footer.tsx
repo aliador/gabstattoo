@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Instagram } from 'lucide-react';
 import './Footer.css';
+import PanoramaScanner from './PanoramaScanner';
 
 // Importing our high contrast Knight Skull central image
 import knightSkullCenter from '../assets/images/knight_skull_stencil_1781658211478.jpg';
@@ -61,25 +62,9 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Central massive Skull and click button */}
+            {/* Central panorama scanner component */}
             <div className="center-booking-card">
-              <div className="skull-container brutalist-border">
-                <img 
-                  src={knightSkullCenter} 
-                  alt="Gab.Tatto Knight Skull Emblem" 
-                  className="skull-image-center"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="skull-halo"></div>
-              </div>
-
-              {/* Booking main trigger */}
-              <button 
-                onClick={() => setIsInverted(true)} 
-                className="big-booking-trigger font-display hard-edges"
-              >
-                [ MARCAR MINHA PELE ]
-              </button>
+              <PanoramaScanner onBooking={() => setIsInverted(true)} />
             </div>
 
             {/* Right booking links pillar */}
