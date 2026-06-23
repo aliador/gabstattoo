@@ -71,12 +71,19 @@ export default function App() {
           {/* Skin Work Gallery */}
           <SkinWorkGallery />
 
-          {/* Additional ticker beneath the last gallery */}
-          <section style={{ position: 'relative', height: '90px', display: 'flex', alignItems: 'center', backgroundColor: 'var(--black)', overflow: 'hidden', borderTop: '2px solid var(--white)', borderBottom: '2px solid var(--white)' }}>
-            <div className="ticker-wrap hard-edges" style={{ position: 'absolute', left: '-5%', width: '110%', transform: 'rotate(-1deg)', zIndex: 9 }}>
+          {/* Additional tickers beneath the last gallery */}
+          <section style={{ position: 'relative', height: '150px', display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: 'var(--black)', overflow: 'hidden', borderTop: '2px solid var(--white)', borderBottom: '2px solid var(--white)' }}>
+            <div className="ticker-wrap hard-edges" style={{ position: 'absolute', top: '20px', left: '-5%', width: '110%', transform: 'rotate(-1deg)', zIndex: 9 }}>
               <div className="ticker-content" style={{ animationDirection: 'reverse' }}>
                 <span>GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ </span>
                 <span>GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ GABBSTATTOO __ GABSTATOO __ </span>
+              </div>
+            </div>
+
+            <div className="ticker-wrap hard-edges" style={{ position: 'absolute', bottom: '20px', left: '-5%', width: '110%', transform: 'rotate(1deg)', zIndex: 10, backgroundColor: 'var(--black)', color: 'var(--white)', borderTop: '3px solid var(--white)', borderBottom: '3px solid var(--white)' }}>
+              <div className="ticker-content">
+                <span>CYBER_TRIBAL __ BLACKWORK __ DARKNESS __ CYBER_TRIBAL __ BLACKWORK __ DARKNESS __ CYBER_TRIBAL __ BLACKWORK __ DARKNESS __ </span>
+                <span>CYBER_TRIBAL __ BLACKWORK __ DARKNESS __ CYBER_TRIBAL __ BLACKWORK __ DARKNESS __ CYBER_TRIBAL __ BLACKWORK __ DARKNESS __ </span>
               </div>
             </div>
           </section>
