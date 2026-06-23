@@ -38,6 +38,11 @@ export default function Footer() {
     >
       <div className="bg-grid-lines"></div>
 
+      {/* Behind background watermarks */}
+      <div className="closing-background-words font-display" aria-hidden="true">
+        <span>CYBER</span>
+      </div>
+
       <AnimatePresence mode="wait">
         {!isInverted ? (
           // Standard view
