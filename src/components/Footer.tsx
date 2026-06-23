@@ -38,9 +38,9 @@ export default function Footer() {
     >
       <div className="bg-grid-lines"></div>
 
-      {/* Behind background watermarks */}
+      {/* Background watermark above the Instagram block */}
       <div className="closing-background-words font-display" aria-hidden="true">
-        <span>CYBER</span>
+        <span>CICATRIZES_DIGITAIS</span>
       </div>
 
       <AnimatePresence mode="wait">
