@@ -89,8 +89,9 @@ const headerContainerStyle: React.CSSProperties = {
   left: 0,
   width: '100%',
   height: '50px',
-  backgroundColor: 'rgba(0, 0, 0, 0.9)',
+  background: 'linear-gradient(90deg, #8a0303 0%, #b10000 100%)',
   borderBottom: '2px solid var(--white)',
+  boxShadow: '0 2px 16px rgba(0, 0, 0, 0.28)',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
@@ -110,6 +111,7 @@ const logoBadgeStyle: React.CSSProperties = {
   fontWeight: 800,
   letterSpacing: '1px',
   color: 'var(--white)',
+  textShadow: '0 1px 2px rgba(0, 0, 0, 0.35)',
 };
 
 const navLinksStyle: React.CSSProperties = {
@@ -119,16 +121,17 @@ const navLinksStyle: React.CSSProperties = {
 
 const linkStyle: React.CSSProperties = {
   fontSize: '10px',
-  color: '#8c8881',
+  color: 'rgba(255, 255, 255, 0.9)',
   textDecoration: 'none',
   transition: 'color 0.15s ease',
 };
 
 const btnBookingNavStyle: React.CSSProperties = {
   fontSize: '10px',
-  color: 'var(--red)',
+  color: '#ffffff',
   fontWeight: 'bold',
   textDecoration: 'none',
+  textShadow: '0 1px 2px rgba(0, 0, 0, 0.25)',
 };
 
 const statusTrackerStyle: React.CSSProperties = {
