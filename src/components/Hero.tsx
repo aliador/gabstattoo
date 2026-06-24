@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import './Hero.css';
 
-// Using the designated high-quality principal artwork path
-import principalImage from '../assets/images/principal.jpg';
+// Using the requested initial artwork as the hero background
+import initialImage from '../assets/images/inicialv2.png';
 
 export default function Hero() {
   return (
@@ -22,7 +22,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 1.15, rotate: -2 }}
           animate={{ opacity: 0.6, scale: 1, rotate: 0 }}
           transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
-          style={{ backgroundImage: `url(${principalImage})` }}
+          style={{ backgroundImage: `url(${initialImage})` }}
         />
         <div className="hero-vignette"></div>
       </div>

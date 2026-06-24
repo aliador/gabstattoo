@@ -111,7 +111,6 @@ const logoBadgeStyle: React.CSSProperties = {
   fontWeight: 800,
   letterSpacing: '1px',
   color: 'var(--white)',
-  textShadow: '0 1px 2px rgba(0, 0, 0, 0.35)',
 };
 
 const navLinksStyle: React.CSSProperties = {
